@@ -26,12 +26,16 @@ let minNum = Math.min(...numbers);
 console.log(minNum);
 
 // 6. 全部開根號並乘上 10
-function sqrtMult10(numbers) {
-  var newNumbers = [];
-  numbers.forEach(element => { newNumbers.push(Math.sqrt(element) * 10) });
-  return newNumbers;
-}
-console.log(sqrtMult10(numbers));
+// function sqrtMult10(numbers) {
+//   var newNumbers = [];
+//   numbers.forEach(element => { newNumbers.push(Math.sqrt(element) * 10) });
+//   return newNumbers;
+// }
+// console.log(sqrtMult10(numbers));
+
+let sqrtMult10 = numbers.map(element => Math.sqrt(element) * 10);
+console.log(sqrtMult10);
+
 
 // 7. 請依數值大小排序，由大而小
 console.log(numbers.sort((a, b) => b - a));
